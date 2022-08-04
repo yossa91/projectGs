@@ -314,11 +314,13 @@ body{
         -moz-appearance:none; /*for firefox*/
         appearance:none;
     }
-    .mMainHeaderLogo{
+    .mMainHeaderLogo>a{
+        display: block;
         width: 70px;
         height: 40px;
         background: url('../img/greensing_logo.png')center no-repeat;
         background-size: cover;
+
     }
     .mMainHeaderMenu{
         width: 50px;
@@ -335,7 +337,7 @@ body{
         height: 0;
         overflow: hidden;
         position: fixed;
-        top:66px;
+        top:65px;
         left: 0;
         right: 0;
         z-index: 90;
