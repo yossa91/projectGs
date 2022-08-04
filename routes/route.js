@@ -15,13 +15,28 @@ router.use(expressLayouts);
 router.get('/', (req,res) => {
     res.render('main');
 });
-//그린씽안내 _ 그린씽이란page
+
+//그린씽안내 
+//그린씽이란page
 router.get('/about', (req,res) => {
-  res.render('about.ejs');
+  res.render('guide_about.ejs');
 });
-//그린씽안내 _ 이용안내page
+//이용안내page
 router.get('/guide1', (req,res) => {
-  res.render('useGuide.ejs');
+  res.render('guide_useGuide.ejs');
+});
+//이용방법page
+router.get('/guide2', (req,res) => {
+  res.render('guide_useHow.ejs');
+});
+//의무&책임page
+router.get('/duty', (req,res) => {
+  res.render('guide_duty.ejs');
+});
+
+//고객센터
+router.get('/notice', (req,res) => {
+  res.render('service_notice.ejs');
 });
 
 

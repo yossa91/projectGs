@@ -115,11 +115,45 @@
 
 }
 @media screen and (max-width: 960px){
-
-    /*사이드메뉴 제거*/
+    #container{
+        display: block;
+        padding: 20px 15px 100px 15px;
+    }
+    /*사이드메뉴 상단으로*/
     .sideMenuWrap{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .sideMenuWrap>h3{
         display: none;
     }
+    .sideMenuWrap>ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .sideMenuWrap>ul>li{
+        width: 100%;
+    }
+    .sideMenuWrap>ul>li>a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 40px;
+        color: #333;
+        border-bottom: 1px solid #E9E9E9;
+        border-top: 1px solid #E9E9E9;
+        border-right: 1px solid #E9E9E9;
+    }
+    .sideMenuWrap>ul>li:nth-of-type(1)>a{
+        border-left: 1px solid #E9E9E9;
+    }
+    .sideMenuWrap>ul>li>.sideMenuCK{
+        line-height: 41px;
+    }
+    /*content*/
     .contentWrap{
         width: 100%;
     }
@@ -133,7 +167,10 @@
     #container{
         padding: 100px 15px 100px 15px;
     }
-
+    /*사이드메뉴 제거*/
+    .sideMenuWrap{
+        display: none;
+    }
 
 
 }

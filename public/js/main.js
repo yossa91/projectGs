@@ -28,6 +28,7 @@ subListBtn.forEach((el, idx) => {
 /*웹 메뉴*/
 var menuBtn = document.querySelectorAll('.h_m_menuBtn');
 var menuList = document.querySelectorAll('.h_m_slideMenu');
+var headeTop = document.querySelector('.headTop');
     menuBtn.forEach((el, idx) => {
         menuBtn[idx].addEventListener('mouseover', () => {
             //태블릿부터는 슬라이드 메뉴 제거
@@ -46,12 +47,20 @@ var menuList = document.querySelectorAll('.h_m_slideMenu');
             }
         });
     });
+    //mouseleave시 상단 헤드로 마우스 옮기면 슬라이드 안올라감 방지...
+    headeTop.addEventListener('mouseover', () => {
+        for(var i = 0; menuList.length > i ; i++ ){
+            menuList[i].style.display = 'none';
+        }
+        menuList[idx].style.display =  'none';
+    });
     menuList.forEach((el, idx) => {
         menuList[idx].addEventListener('mouseleave', () => {
             menuList[idx].style.display =  'none';
             menuBtn[idx].style.color = '#333';
         });
     });
+
 
     /*메인 모바일 시 지도 뜨면서 footer 사라지게 */
     var mainMap =  document.querySelector('#mapMain');

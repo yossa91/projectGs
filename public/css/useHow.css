@@ -1,0 +1,168 @@
+@charset "UTF-8";
+    /*useHowBox title*/
+    .useHowBox{
+        border-top: 2px solid #333;
+        background-color: #f3f3f3;
+        padding: 15px 0 40px;
+    }
+    .useHowBox>h4{
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 7px;
+    }
+    .useHowtip{
+        font-size: 15px;
+        color: #C61E1E;
+        line-height: 22px;
+        padding-top: 5px;
+        margin-left: 7px;
+    }
+    /*contentBox*/
+    .useHowBox>div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:baseline;
+    }
+    .useHowBox>div>article{
+        width: calc(25% - 14px);
+        margin:25px 7px 0;
+    }
+    .useHowBox>div>article>div{
+        width: 100%;
+        padding-top: 65%;
+        position: relative;
+    }
+    .useHowBox>div>article>div>span{
+        display: block;
+        position: absolute;
+        top:0; left: 0%;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 0 0 7px 0;
+        background-color:#C61E1E;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .useHowBox>div>article>p{
+        font-size: 15px;
+        line-height: 22px;
+        padding-top: 10px;
+    }
+    /*이미지*/
+    .useHowP1-1{
+        background:#fff url('../img/useHow/useHowp1-1.png')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP1-2{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP1-3{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP1-4{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    /**/
+    .useHowP2-1{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP2-2{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP2-3{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    /**/
+    .useHowP3-1{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP3-2{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP3-3{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP3-4{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP3-5{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP3-6{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    /**/
+    .useHowP4-1{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-2{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-3{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-4{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-5{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-6{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-7{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+    .useHowP4-8{
+        background:#fff url('')center no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+
+@media screen and (max-width: 1300px){
+
+
+
+}
+@media screen and (max-width: 960px){
+    .useHowBox>div>article{
+        width: calc(25% - 10px);
+        margin:25px 5px 0;
+    }
+
+
+}
+
+
+@media screen and (max-width: 540px){
+    .useHowBox>div>article{
+        width: calc(50% - 10px);
+        margin:25px 5px 0;
+    }
+
+}
