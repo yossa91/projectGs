@@ -13,7 +13,7 @@ router.use(expressLayouts);
 
 //메인page
 router.get('/', (req,res) => {
-    res.render('main.ejs');
+    res.render('main');
 });
 //그린씽안내 _ 그린씽이란page
 router.get('/about', (req,res) => {
