@@ -1,0 +1,137 @@
+@charset "UTF-8";
+    /*container 중앙정렬*/
+    #container{
+        width: 1240px;
+        box-sizing: border-box;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px  0 100px 0;
+    }
+    /*공용 sidemMenu*/
+    .sideMenuWrap{
+        width: 240px;
+    }
+    .sideMenuWrap>h3{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        border-top: 1px solid #659E35;
+        line-height: 150px;
+        box-sizing: border-box;
+    }
+    .sideMenuWrap>ul>li>a{
+        display: block;
+        width: 100%;
+        padding: 0 0 0 20px;
+        box-sizing: border-box;
+        line-height: 45px;
+        color: #333;
+        border-bottom: 1px solid #E9E9E9;
+    }
+    .sideMenuWrap>ul>li>a:hover{
+        color: #747474;
+    }
+    .sideMenuWrap>ul>li:nth-of-type(1)>a{
+        border-top: 1px solid #E9E9E9;
+    }
+    .sideMenuWrap>ul>li>.sideMenuCK{
+        background-color: #659E35;
+        color: #fff;
+        border: 0;
+    }
+    .sideMenuWrap>ul>li>.sideMenuCK:hover{
+        color: #fff;
+    }
+    /*공용 container title 기타 등등*/
+    .contentWrap{
+        width: calc(100% - 300px);
+    }
+    .contentMainTitle{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .miniMap{
+        width: 100%;
+        font-size: 15px;
+        padding: 15px 0;
+        border-bottom: 1px solid #659E35;
+    }
+    .miniMapHome>a{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url('../img/home_icon_menu.png')center no-repeat;
+        background-size: 15px auto;
+        transition: 0.2s;
+    }
+    .miniMapHome>a:hover{
+        background: url('../img/home_icon_menu_hover.png')center no-repeat;
+        background-size: 15px auto;
+    }
+    .miniMapblank{
+        padding: 0 3px;
+        color: #747474;
+    }
+    .miniMapTop>a{
+        color: #747474;
+        transition: 0.2s;
+    }
+    .miniMapTop>a:hover{
+        color: #a6a6a6;
+    }
+    .miniMapNow{
+        color: #333;
+    }
+    /**/
+    .contentBox{
+        padding: 0 15px;
+    }
+    .contentSubTitle{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 30px 0 20px 15px;
+        background: url('../img/icon_dot.png') left 38px no-repeat;
+    }
+    .contentText{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+
+@media screen and (max-width: 1300px){
+
+    /*container 중앙정렬*/
+    #container{
+        width: 100%;
+        padding: 50px 15px 100px 15px;
+    }
+    /*공용 container title 기타 등등*/
+    .contentWrap{
+        width: calc(100% - 260px);
+    }
+
+
+}
+@media screen and (max-width: 960px){
+
+    /*사이드메뉴 제거*/
+    .sideMenuWrap{
+        display: none;
+    }
+    .contentWrap{
+        width: 100%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 540px){
+
+
+
+
+}

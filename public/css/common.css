@@ -1,0 +1,379 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+body{
+        font-family: 'Noto Sans KR', sans-serif , 'arial'; 
+
+        color: #333;
+    }
+    /*헤더*/
+    header{
+        width: 100%;
+        border-bottom: 1px solid #659E35;
+    }
+    /*상단메뉴_언어*/
+    .mob_h_t_lang{
+        display: none;
+    }
+    .headTop{
+        height: 40px;
+        background-color:#E9E9E9;
+    }
+    .h_t_wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .h_t_wrap ul{
+        display: flex;
+    }
+    .h_t_wrap ul li a{
+        color: #333;
+    }
+    .h_t_wrap ul li a:hover{
+        color: #747474;
+    }
+    .h_t_wrap .h_t_lang li a{
+        margin-top: 14px;
+        display: block;
+        position: relative;
+        padding: 0 5px;
+        font-size: 12px;
+    }
+    .h_t_wrap .h_t_lang li:not(:first-of-type) a::after{
+        content: "";
+        display: block;
+        position:absolute;
+        left: 0;
+        top:2px;
+        width: 1px;
+        height: 10px;
+        background-color: #333;
+    }
+    .h_t_wrap .h_t_lang li:first-of-type a{
+        padding-left: 0;
+    }
+    /*상단메뉴_로그인*/
+    .h_t_wrap .h_t_user li a{
+        margin-top: 8px;
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 10px 5px;
+    }
+    .h_t_wrap .h_t_user li:last-of-type a{
+        font-weight:inherit;
+        padding-right:0;
+    }
+    /*하단메뉴,메인메뉴*/
+    .h_m_wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .h_m_wrap>a{
+        display: block;
+        width: 120px;
+        padding-top:100px;
+        background: url('../img/greensing_logo.png') center no-repeat;
+        background-size: contain;
+
+    }
+    .h_m_wrap>ul{
+        display: flex;
+    }
+    .h_m_wrap>ul>li{
+        position: relative;
+        padding: 0 40px;
+    }
+    .h_m_wrap>ul>li>a{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        padding: 10px 0;
+        transition: 0.2s;
+    }
+    .h_m_wrap>ul>li:last-of-type{
+        padding-right: 0;
+    }
+    .h_m_wrap>ul>li>a:hover{
+        color: #659E35;
+    }
+    /*하단메뉴,슬라이드메뉴*/
+    .h_m_wrap .h_m_slideMenu{
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 71px;
+        text-align: center;
+        padding:20px 0 40px;
+        background-color: #fff;
+    }
+    .h_m_wrap .h_m_slideMenu>li>a{
+        display: block;
+        font-size: 18px;
+        padding: 10px 0;
+        color: #333;
+    }
+    .h_m_wrap .h_m_slideMenu>li>a:hover{
+        color: #fff;
+        background-color: #659E35;
+    }
+    /*footer 푸터*/
+    footer{
+        background-color: #333;
+        color: #fff;
+        font-weight: 100;
+    }
+    footer>hr{
+        padding: 0;
+        margin: 0;
+        opacity: 0.3;
+    }
+    .ftTop>ul{
+        display: flex;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+    .ftTop>ul>li{
+        display: block;
+        flex-shrink: 0;
+    }
+    .ftTop>ul>li>a{
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 0 15px;
+        transition: 0.2s;
+    }
+    .ftTop>ul>li>a:hover{
+        color: #747474;
+    }
+    .ftTop>ul>li:first-of-type>a{
+        padding-left: 0;
+    }
+    /**/
+    .ftBot{
+        padding: 40px 0;
+        background: url('../img/footer_logo.png') right center no-repeat;
+    }
+    .ftBot li{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .ftBot p{
+        font-size: 14px;
+        padding-top: 25px;
+        opacity: 0.5;
+    }
+    /**/
+    .mobileMain, .mSideMenu{
+        display: none;
+    }
+
+
+
+
+
+@media screen and (max-width: 1300px){
+    /*하단메뉴,메인메뉴*/
+    .h_m_wrap>ul>li{
+        position: relative;
+        padding: 0 20px;
+    }
+    .h_m_wrap>ul>li>a{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        padding: 10px 0;
+    }
+    .h_m_wrap>ul>li:last-of-type{
+        padding-right: 0;
+    }
+    .h_m_wrap>ul>li>a:hover{
+        color: #659E35;
+    }
+
+}
+@media screen and (max-width: 960px){
+    /*header*/
+    /*상단메뉴_언어*/
+    .h_t_wrap .h_t_lang{
+        display: none;
+    }
+    .mob_h_t_lang{
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 12px 0 0 0;
+        outline: none;
+        font-size: 14px;
+    }
+    .mob_h_t_lang:focus{
+        outline: none;
+    }
+    /*하단메뉴,메인메뉴*/
+    .h_m_wrap{
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    .h_m_wrap>a{
+        display:none;
+    }
+    .h_m_wrap>ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .h_m_wrap>ul>li{
+        position: relative;
+        padding: 0;
+    }
+    .h_m_wrap>ul>li>a{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        padding: 10px 0;
+    }
+    /*footer*/
+    .ftBot{
+        padding: 40px 0;
+        background: none;
+    }
+
+
+
+}
+@media screen and (max-width: 730px){
+    /*header*/
+    .h_m_wrap>ul>li>a{
+        font-size: 16px;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 540px){
+    .headTop{
+        display: none;
+    }
+    /*footer*/
+    .ftTop>ul>li>a{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    /**/
+    .ftBot li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .ftBot p{
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    .h_m_wrap {
+        display: none;
+    }
+    /**/
+    .mobileMain{
+        display: block;
+        width: 100vw;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 70;
+    }
+    /*mobile hdeader 첫줄*/
+    .mMainHeader{
+        width: 100%;
+        height: 65px;
+        border-bottom: 1px solid #659E35;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mMainHeaderLang{
+        border: 0;
+        background: url('../img/icon_bot.png')right 10px center no-repeat;
+        width: 80px;
+        padding:0 0 0 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #333;
+        outline: none;
+        -webkit-appearance:none; /* for chrome */
+        -moz-appearance:none; /*for firefox*/
+        appearance:none;
+    }
+    .mMainHeaderLogo{
+        width: 70px;
+        height: 40px;
+        background: url('../img/greensing_logo.png')center no-repeat;
+        background-size: cover;
+    }
+    .mMainHeaderMenu{
+        width: 50px;
+        height: 50px;
+        background: url('../img/bugerMenu.png')right 15px center no-repeat;
+        background-size: 20px auto;
+        transition: 0.2s;
+    }
+    
+    /*사이드 메뉴*/
+    .mSideMenu{
+        display: block;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: fixed;
+        top:66px;
+        left: 0;
+        right: 0;
+        z-index: 90;
+        transition: 0.3s;
+        background-color: #fff;
+    }
+    .mSideMenu>h3{
+        border-bottom: 1px solid #659E35;
+    }
+    .mSideMenu>h3>a{
+        color:#659E35 ;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 75px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+    .mSideMenuSubT{
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 65px;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+    .mSideMenuSub{
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .mSideMenuSub>li>a{
+        display: block;
+        padding-left: 70px;
+        font-size: 18px;
+        line-height: 50px;
+        color: #333;
+        background-color: #E9E9E9;
+    }
+
+    
+}

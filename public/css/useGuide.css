@@ -1,0 +1,54 @@
+@charset "UTF-8";
+    
+    /*table크기*/
+    .useTableBox{
+        width: 100%;
+        border-top: 2px solid #333;
+    }
+    .useTableBox table{
+        width: 100%;
+    }
+    .useTableBox td{
+        vertical-align:middle;
+        padding: 10px 10px;
+        border-bottom: 1px solid #E9E9E9;
+        border-right: 1px solid #E9E9E9;
+        font-size: 15px;
+    }
+    .useTableBox .guideTbline{
+        border-right: 0;
+    }
+    .guideTbTitle{
+        text-align: center;
+        background-color: #f3f3f3;
+        font-weight: 500;
+    }
+
+
+@media screen and (max-width: 1300px){
+
+
+
+}
+@media screen and (max-width: 960px){
+    /*테이블사이즈고정 스크롤숨김*/
+    .useTableBox{
+        overflow-y: scroll;
+        scrollbar-width: none;
+        
+    }
+    .useTableBox::-webkit-scrollbar {
+        display: none;
+    }
+    .useTableBox table{
+        width: 800px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 540px){
+
+
+}
