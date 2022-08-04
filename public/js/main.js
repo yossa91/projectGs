@@ -70,7 +70,7 @@ var menuList = document.querySelectorAll('.h_m_slideMenu');
 
 
 
-var mapContainer = document.getElementById('map'),
+var mapContainer = document.getElementById('map'), 
 mapOption = { 
     center: new kakao.maps.LatLng(35.686632, 127.909469), 
     level: 5 
