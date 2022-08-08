@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 const {check, validationResult} = require('express-validator');
-
+const db = require("./../db.js");
 
 
 
@@ -34,12 +34,22 @@ router.get('/duty', (req,res) => {
   res.render('guide_duty.ejs');
 });
 
-//고객센터
+//고객센터 
+//공지사항 list page
 router.get('/notice', (req,res) => {
-  res.render('service_notice.ejs');
+  db.getAllList((rows) => {
+      res.render('service_notice', { rows : rows });
+    }
+  );
 });
-
-
+//공지사항 list description page
+router.get('/notice/:no', (req,res) => {
+  var no = req.params.no;
+  db.page(no, (result) => {
+      res.render('service_notice_desc', { result : result });
+    }
+  );
+});
 
 
 

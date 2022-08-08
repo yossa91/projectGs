@@ -1,0 +1,38 @@
+<div id="container">
+    <div class="sideMenuWrap">
+        <h3>고객센터 / 보험 안내</h3>
+        <ul>
+            <li><a href="" class="sideMenuCK">공지사항</a></li>
+            <li><a href="">Qna</a></li>
+            <li><a href="">갤러리</a></li>
+            <li><a href="">보험안내</a></li>
+        </ul>
+    </div>
+    <div class="contentWrap">
+        <h2 class="contentMainTitle">공지사항</h2>
+        <div class="miniMap">
+            <span class="miniMapHome"><a href="/"></a></span>
+            <span class="miniMapblank">></span>
+            <span class="miniMapTop"><a href="/about">고객센터 / 보험 안내</a></span>
+            <span class="miniMapblank">></span>
+            <span class="miniMapNow">공지사항</span>
+        </div>
+        <article class="contentBox">
+            <div class="noticeBox">
+                <div class="noticeDesc">
+                    <h3><%= result[0].title %></h3>
+                    <span><%= result[0].day%></span>
+                    <p><%= result[0].description %></p>
+
+                </div>
+                <!--
+                <div class="back_list">
+                    <a onclick="javascript:location.href='/update/<%= result[0].no%>'">수정</a>
+                    <a onclick="javascript:location.href='/delete/<%= result[0].no%>'">삭제</a>
+                </div>
+                -->
+            </div>
+        </article>
+        
+    </div>
+</div>
