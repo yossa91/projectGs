@@ -30,6 +30,12 @@
                 </div>
                 <div class="noticeList">
                     <table>
+                        <colgroup>
+                            <col width="10%">
+                            <col width="*">
+                            <col width="20%">
+                            <col width="10%">
+                        </colgroup>
                         <tr>
                             <th>번호</th>
                             <th>제목</th>
@@ -39,7 +45,7 @@
                         <% rows.forEach((row, index) => { %>
                         <tr>
                             <td><%= row.no %></td>
-                            <td><a href="/notice/<%=row.no%>"><%= row.title %></a></td>
+                            <td class="tableTitle"><a href="/notice/<%=row.no%>"><%= row.title %></a></td>
                             <td><%= row.day %></td>
                             <td><%= row.hit %></td>
                         </tr>
