@@ -20,27 +20,32 @@
         <article class="contentBox">
             <div class="noticeBox">
                 <div class="noticeSearch">
-                    <select name="" id="notiSearchT">
+                    <select name="" id="notiSearchOp">
                         <option value="noticeAll">전체</option>
                         <option value="noticeTitle">제목</option>
                         <option value="noticeSub">내용</option>
                     </select>
-                    <input type="text" name="" id="">
-                    <input type="submit" value="검색">
+                    <input type="text" name="" class="notiSearchTx">
+                    <input type="submit" value="검색" class="notiSearchBtn">
                 </div>
                 <div class="noticeList">
                     <table>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="*">
+                            <col width="20%">
+                            <col width="15%">
+                        </colgroup>
                         <tr>
                             <th>번호</th>
                             <th>제목</th>
                             <th>등록일</th>
                             <th>조회수</th>
                         </tr>
-                        
                         <% rows.forEach((row, index) => { %>
                         <tr>
                             <td><%= row.no %></td>
-                            <td><a href="/notice/<%=row.no%>"><%= row.title %></a></td>
+                            <td class="tableTitle"><a href="/notice/<%=row.no%>"><%= row.title %></a></td>
                             <td><%= row.day %></td>
                             <td><%= row.hit %></td>
                         </tr>

@@ -6,12 +6,74 @@
     /*검색박스*/
     .noticeSearch{
         width: 100%;
-        background-color: #F3F3F3;
+        background-color: #E9E9E9;
         display: flex;
         justify-content: center;
         align-items: center;
         border-top: 2px solid #333;
-        padding: 30px 0 30px 0;
+        padding: 40px 0;
+        margin-bottom: 10px;
+    }
+    .noticeSearch>select{
+        border: 0;
+        font-size: 15px;
+        height: 30px;
+        padding: 0 50px 0 10px;
+        outline: none;
+        color: #333;
+        background-color: #fff;
+        margin-right: 5px;
+    }
+    .noticeSearch>select:focus{
+        outline: none;
+    }
+    .notiSearchTx{
+        border: 0;
+        width: 300px;
+        font-size: 15px;
+        line-height: 30px;
+        outline: none;
+        padding: 0 5px;
+        background-color: #fff;
+    }
+    .notiSearchTx:focus{
+        outline: none;
+    }
+    .notiSearchBtn{
+        font-size: 15px;
+        line-height: 30px;
+        background: #333;
+        color: #fff;
+        padding: 0 10px;
+        border: 0;
+    }
+    /*table*/
+    .noticeList{
+        width: 100%;
+    }
+    .noticeList>table{
+        width: 100%;
+        text-align: center;
+    }
+    .noticeList>table th{
+        font-weight: 500;
+        background-color: #E9E9E9;
+        line-height: 40px;
+    }
+    .noticeList>table td{
+        font-weight: 500;
+        line-height: 50px;
+        border-bottom: 1px solid #E9E9E9;
+    }
+    .tableTitle{
+        text-align: left;
+    }
+    /*list number*/
+    .listNum{
+        padding: 50px 0 0 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
