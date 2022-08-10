@@ -3,7 +3,7 @@
         <h3>고객센터 / 보험 안내</h3>
         <ul>
             <li><a href="" class="sideMenuCK">공지사항</a></li>
-            <li><a href="">Qna</a></li>
+            <li><a href="/qna">Qna</a></li>
             <li><a href="">갤러리</a></li>
             <li><a href="">보험안내</a></li>
         </ul>
@@ -18,19 +18,25 @@
             <span class="miniMapNow">공지사항</span>
         </div>
         <article class="contentBox">
-            <div class="noticeBox">
-                <div class="noticeDesc">
-                    <h3><%= result[0].title %></h3>
-                    <span><%= result[0].day%></span>
-                    <p><%= result[0].description %></p>
-
-                </div>
-                <!--
+            <div class="noticeListBox">
                 <div class="back_list">
                     <a onclick="javascript:location.href='/update/<%= result[0].no%>'">수정</a>
                     <a onclick="javascript:location.href='/delete/<%= result[0].no%>'">삭제</a>
                 </div>
-                -->
+                <div class="noticeDesc">
+                    <article>
+                        <span>제목</span>
+                        <p><%= result[0].title %></p>
+                    </article>
+                    <article>
+                        <span>등록일</span>
+                        <p><%= result[0].day%></p>
+                    </article>                   
+                    <div>
+                        <pre><%= result[0].description %></pre>
+                    </div>
+                </div>
+                <a onclick="javascript:location.href='/notice'" class="listBackBtn">목록</a>
             </div>
         </article>
         

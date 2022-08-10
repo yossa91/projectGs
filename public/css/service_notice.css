@@ -7,14 +7,16 @@
     .noticeSearch{
         width: 100%;
         background-color: #E9E9E9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-top: 2px solid #333;
         padding: 40px 0;
         margin-bottom: 10px;
     }
-    .noticeSearch>select{
+    .noticeSearch>form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .noticeSearch>form>select{
         border: 0;
         font-size: 15px;
         height: 30px;
@@ -24,16 +26,22 @@
         background-color: #fff;
         margin-right: 5px;
     }
-    .noticeSearch>select:focus{
+    .noticeSearch>form>select:focus{
         outline: none;
+    }
+    .noticeSearch>form>div{
+        width: 40%;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
     }
     .notiSearchTx{
         border: 0;
-        width: 300px;
+        width: calc(100% - 60px);
         font-size: 15px;
         line-height: 30px;
         outline: none;
-        padding: 0 5px;
+        padding: 0 0 0 10px;
         background-color: #fff;
     }
     .notiSearchTx:focus{
@@ -86,6 +94,28 @@
         align-items: center;
         justify-content: center;
     }
+    .listNum>span{
+        display: block;
+        width: 18px;
+        padding-top: 18px;
+        cursor: pointer;
+    }
+    .listNum>span:hover{
+        opacity: 0.6;
+    }
+    .listNum_left{
+        background: url('../img/left.png')center no-repeat;
+        background-size: auto 18px;
+        margin-right: 10px;
+    }
+    .listNum_right{
+        background: url('../img/right.png')center no-repeat;
+        background-size: auto 18px;
+        margin-left: 10px;
+    }
+    textarea{
+        white-space:pre-wrap;
+    }
 
 
 @media screen and (max-width: 1300px){
@@ -95,10 +125,47 @@
 }
 @media screen and (max-width: 960px){
 
-
+    /**/
+    .noticeSearch>form>select{
+        padding: 0 30px 0 10px;
+    }
+    .noticeSearch>form>div{
+        width: 60%;
+    }
 }
 
 
 @media screen and (max-width: 540px){
+
+    /*검색박스*/
+    .noticeSearch{
+        padding: 40px 0;
+    }
+    /**/
+    .noticeSearch>form{
+        display: block;
+    }
+    .noticeSearch>form>select{
+        display: block;
+        width: 70%;
+        margin: 0 auto 5px;
+    }
+    .noticeSearch>form>div{
+        width: 70%;
+        margin: auto;
+    }
+    /*table*/
+    .noticeList{
+        width: 100%;
+        overflow-x: scroll;
+        scrollbar-width: none; /* Firefox */
+    }
+    .noticeList::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+    }
+    .noticeList>table{
+        width: 650px;
+    }
+
 
 }

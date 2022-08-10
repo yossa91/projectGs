@@ -1,0 +1,76 @@
+@charset "UTF-8";
+   /**/
+   .noticeWrite{
+    margin-top: 30px;
+    border-top: 2px solid #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+   }
+   .noticeWrite>article{
+    padding: 0 10px;
+   }
+   .noticeWrite>article>span{
+    display: block;
+    line-height: 35px;
+   }
+   input{
+    outline: none;
+   }
+   input:focus{
+    outline: none;
+   }
+   textarea{
+    outline: none;
+   }
+   textarea:focus{
+    outline: none;
+   }
+   /*제목*/
+   .noticeWTitle>input{
+    width: 100%;
+    line-height: 25px;
+    padding: 0 10px;
+    box-sizing: border-box;
+   }
+   /*내용*/
+   .noticeDscr>textarea{
+    width: 100%;
+    height: 300px;
+    resize: none;
+    box-sizing: border-box;
+   }
+   /**/
+   .noticeWBtn{
+    display: flex;
+    justify-content: center;
+   }
+   .noticeWBtn>input{
+    border: 0;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    width: 65px;
+    line-height: 30px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+   }
+   .noticeWBtn>input:nth-of-type(1){
+    margin-right: 10px;
+   }
+
+@media screen and (max-width: 1300px){
+
+
+
+}
+@media screen and (max-width: 960px){
+
+
+}
+
+
+@media screen and (max-width: 540px){
+
+
+}

@@ -1,0 +1,32 @@
+<div id="container">
+    <div class="sideMenuWrap">
+        <h3>고객센터 / 보험 안내</h3>
+        <ul>
+            <li><a href="" class="sideMenuCK">공지사항</a></li>
+            <li><a href="/qna">Qna</a></li>
+            <li><a href="">갤러리</a></li>
+            <li><a href="">보험안내</a></li>
+        </ul>
+    </div>
+    <div class="contentWrap">
+        <h2 class="contentMainTitle">공지사항</h2>
+        <div class="contentBox">
+            <form action="/update/<%= row[0].no %>" method="POST">
+                <div class="noticeWrite">
+                    <article class="noticeWTitle">
+                        <span>제목</span>
+                        <input type="text" name="title" value="<%= row[0].title %>" id="nt_title">
+                    </article>
+                    <article class="noticeDscr">
+                        <span>내용</span>
+                        <textarea id="nt_text" name="content"><%= row[0].description %></textarea>
+                    </article>
+                </div>
+                <div class="noticeWBtn">   
+                    <input type="submit" value="저장" id="nt_save">
+                    <input type="button" value="back" onclick="javascript:location.href='/notice'">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

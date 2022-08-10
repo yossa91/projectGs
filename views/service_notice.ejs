@@ -3,7 +3,7 @@
         <h3>고객센터 / 보험 안내</h3>
         <ul>
             <li><a href="" class="sideMenuCK">공지사항</a></li>
-            <li><a href="">Qna</a></li>
+            <li><a href="/qna">Qna</a></li>
             <li><a href="">갤러리</a></li>
             <li><a href="">보험안내</a></li>
         </ul>
@@ -13,20 +13,24 @@
         <div class="miniMap">
             <span class="miniMapHome"><a href="/"></a></span>
             <span class="miniMapblank">></span>
-            <span class="miniMapTop"><a href="/about">고객센터 / 보험 안내</a></span>
+            <span class="miniMapTop"><a href="/notice">고객센터 / 보험 안내</a></span>
             <span class="miniMapblank">></span>
             <span class="miniMapNow">공지사항</span>
         </div>
         <article class="contentBox">
             <div class="noticeBox">
                 <div class="noticeSearch">
-                    <select name="" id="notiSearchOp">
-                        <option value="noticeAll">전체</option>
-                        <option value="noticeTitle">제목</option>
-                        <option value="noticeSub">내용</option>
-                    </select>
-                    <input type="text" name="" class="notiSearchTx">
-                    <input type="submit" value="검색" class="notiSearchBtn">
+                    <form action="/search" method="POST">
+                        <select name="searchOp" id="notiSearchOp">
+                            <option value="">전체</option>
+                            <option value="noticeTitle">제목</option>
+                            <option value="noticeSub">내용</option>
+                        </select>
+                        <div>
+                            <input type="text" name="searchTx" class="notiSearchTx">
+                            <input type="submit" value="검색" class="notiSearchBtn">
+                        </div>
+                    </form>
                 </div>
                 <div class="noticeList">
                     <table>
